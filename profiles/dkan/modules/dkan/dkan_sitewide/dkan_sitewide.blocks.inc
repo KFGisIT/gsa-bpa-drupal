@@ -207,10 +207,10 @@ function dkan_sitewide_license_block() {
  */
 function dkan_sitewide_footer_author() {
   return t(
-    "Powered by !dkan, a project of !nucivic",
+    "Powered by !drupal, a project of !acquia",
     array(
-      '!dkan' => l(t('DKAN'), 'http://nucivic.com/dkan'),
-      '!nucivic' => l(t('NuCivic'), 'http://nucivic.com'),
+      '!drupal' => l(t('Drupal'), 'http://www.drupal.org'),
+      '!acquia' => l(t('Acquia'), 'https://www.acquia.com/'),
     )
   );
 }
