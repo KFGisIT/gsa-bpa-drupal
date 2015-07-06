@@ -11,24 +11,24 @@ function custom_18f_node_export_features_default() {
   $node_export = array(
   'code_string' => 'array(
   (object) array(
-      \'vid\' => \'80\',
+      \'vid\' => \'89\',
       \'uid\' => \'1\',
       \'title\' => \'openFDA: Yuck.io datasets\',
-      \'log\' => \'\',
+      \'log\' => "Update to resource \'openFDA: Food Recalls\'",
       \'status\' => \'1\',
       \'comment\' => \'0\',
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
-      \'vuuid\' => \'9512fdc5-b9ea-45e0-9e51-a3a7f0a2d777\',
+      \'vuuid\' => \'224d8901-d2fa-4ca5-a22a-9029dd6e97be\',
       \'nid\' => \'21\',
       \'type\' => \'dataset\',
       \'language\' => \'und\',
       \'created\' => \'1436106112\',
-      \'changed\' => \'1436208058\',
+      \'changed\' => \'1436219549\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'1036210d-254b-4543-8a22-78152b467f55\',
-      \'revision_timestamp\' => \'1436208058\',
+      \'revision_timestamp\' => \'1436219549\',
       \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
@@ -283,7 +283,7 @@ function custom_18f_node_export_features_default() {
       \'node_export_drupal_version\' => \'7\',
     ),
   (object) array(
-      \'vid\' => \'76\',
+      \'vid\' => \'87\',
       \'uid\' => \'1\',
       \'title\' => \'openFDA: Top Adverse Reactions\',
       \'log\' => "Update to resource \'openFDA: Interactive Adverse Drug Reactions\'",
@@ -291,16 +291,16 @@ function custom_18f_node_export_features_default() {
       \'comment\' => \'0\',
       \'promote\' => \'0\',
       \'sticky\' => \'0\',
-      \'vuuid\' => \'673f5774-5bfb-4beb-ad2a-9a6676798dd2\',
+      \'vuuid\' => \'e84e41ce-0832-420d-af3d-b6855044e2c3\',
       \'nid\' => \'18\',
       \'type\' => \'dataset\',
       \'language\' => \'und\',
       \'created\' => \'1436043532\',
-      \'changed\' => \'1436207853\',
+      \'changed\' => \'1436219549\',
       \'tnid\' => \'0\',
       \'translate\' => \'0\',
       \'uuid\' => \'1742756b-bbaf-479f-bdb2-22a190175498\',
-      \'revision_timestamp\' => \'1436207853\',
+      \'revision_timestamp\' => \'1436219549\',
       \'revision_uid\' => \'1\',
       \'body\' => array(
         \'und\' => array(
@@ -615,6 +615,104 @@ function custom_18f_node_export_features_default() {
         \'pid\' => \'43\',
         \'source\' => \'node/24\',
         \'alias\' => \'dataset/resource/3d00d721-881f-48ba-8de4-ad62984e9d48\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
+      \'vid\' => \'36\',
+      \'uid\' => \'1\',
+      \'title\' => \'openFDA: Top Adverse Drug Reactions from 2004-01-01 to 2015-07-01\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'4e3e0b70-33b5-4440-8487-2183d36869cb\',
+      \'nid\' => \'17\',
+      \'type\' => \'page\',
+      \'language\' => \'und\',
+      \'created\' => \'1436039288\',
+      \'changed\' => \'1436064597\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'7f4348c9-f52b-412f-b775-e8dfb0b1d681\',
+      \'revision_timestamp\' => \'1436064597\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => "<div ng-app=\\"fdaApp\\">\\r\\n <div ng-view=\\"\\"></div>\\r\\n\\r\\n</div>\\r\\n  <link rel=\\"stylesheet\\" href=\\"/static/bower_components/bootstrap/dist/css/bootstrap.css\\" />\\r\\n    <!-- endbower -->\\r\\n    <!-- endbuild -->\\r\\n    <!-- build:css({.tmp,app}) /static/styles/main.css -->\\r\\n    <link rel=\\"stylesheet\\" href=\\"/static/styles/main.css\\">\\r\\n    <link rel=\\"stylesheet\\" href=\\"/static/styles/charts.css\\">\\r\\n\\r\\n  <script src=\\"/static/bower_components/angular/angular.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/bootstrap/dist/js/bootstrap.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/angular-resource/angular-resource.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/angular-cookies/angular-cookies.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/angular-sanitize/angular-sanitize.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/angular-route/angular-route.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/d3/d3.js\\"></script>\\r\\n    <script src=\\"/static/bower_components/angular-bootstrap/ui-bootstrap-tpls.js\\"></script>\\r\\n\\r\\n\\r\\n <!-- build:js({.tmp,app}) /static/scripts/scripts.js -->\\r\\n        <script src=\\"/static/scripts/app.js\\"></script>\\r\\n        <script src=\\"/static/scripts/controllers/main.js\\"></script>\\r\\n        <script src=\\"/static/scripts/services/data.js\\"></script>\\r\\n        <script src=\\"/static/scripts/directives/chartLines.js\\"></script>\\r\\n        <script src=\\"/static/scripts/directives/chartList.js\\"></script>\\r\\n        <script src=\\"/static/scripts/directives/chartBarpie.js\\"></script>\\r\\n        <!-- endbuild -->",
+            \'summary\' => \'\',
+            \'format\' => \'php_code\',
+            \'safe_value\' => "<div ng-app=\\"fdaApp\\">\\n <div ng-view=\\"\\"></div>\\n\\n</div>\\n  <link rel=\\"stylesheet\\" href=\\"/static/bower_components/bootstrap/dist/css/bootstrap.css\\" />\\n    <!-- endbower -->\\n    <!-- endbuild -->\\n    <!-- build:css({.tmp,app}) /static/styles/main.css -->\\n    <link rel=\\"stylesheet\\" href=\\"/static/styles/main.css\\">\\n    <link rel=\\"stylesheet\\" href=\\"/static/styles/charts.css\\">\\n\\n  <script src=\\"/static/bower_components/angular/angular.js\\"></script>\\n    <script src=\\"/static/bower_components/bootstrap/dist/js/bootstrap.js\\"></script>\\n    <script src=\\"/static/bower_components/angular-resource/angular-resource.js\\"></script>\\n    <script src=\\"/static/bower_components/angular-cookies/angular-cookies.js\\"></script>\\n    <script src=\\"/static/bower_components/angular-sanitize/angular-sanitize.js\\"></script>\\n    <script src=\\"/static/bower_components/angular-route/angular-route.js\\"></script>\\n    <script src=\\"/static/bower_components/d3/d3.js\\"></script>\\n    <script src=\\"/static/bower_components/angular-bootstrap/ui-bootstrap-tpls.js\\"></script>\\n\\n\\n <!-- build:js({.tmp,app}) /static/scripts/scripts.js -->\\n        <script src=\\"/static/scripts/app.js\\"></script>\\n        <script src=\\"/static/scripts/controllers/main.js\\"></script>\\n        <script src=\\"/static/scripts/services/data.js\\"></script>\\n        <script src=\\"/static/scripts/directives/chartLines.js\\"></script>\\n        <script src=\\"/static/scripts/directives/chartList.js\\"></script>\\n        <script src=\\"/static/scripts/directives/chartBarpie.js\\"></script>\\n        <!-- endbuild -->",
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'name\' => \'admin\',
+      \'picture\' => \'0\',
+      \'data\' => \'b:0;\',
+      \'path\' => array(
+        \'pid\' => \'31\',
+        \'source\' => \'node/17\',
+        \'alias\' => \'openfda-top-adverse-drug-reactions-2004-01-01-2015-07-01\',
         \'language\' => \'und\',
       ),
       \'menu\' => NULL,
@@ -1001,136 +1099,6 @@ function custom_18f_node_export_features_default() {
         \'pid\' => \'35\',
         \'source\' => \'node/19\',
         \'alias\' => \'dataset/openfda-top-adverse-reactions/resource/db971b68-7f29-4337-857f-d2d5ba3d4b44\',
-        \'language\' => \'und\',
-      ),
-      \'menu\' => NULL,
-      \'node_export_drupal_version\' => \'7\',
-    ),
-  (object) array(
-      \'vid\' => \'79\',
-      \'uid\' => \'1\',
-      \'title\' => \'openFDA: Recalled Food Items\',
-      \'log\' => \'\',
-      \'status\' => \'1\',
-      \'comment\' => \'0\',
-      \'promote\' => \'0\',
-      \'sticky\' => \'0\',
-      \'vuuid\' => \'e40a68d9-4b5d-4a66-afba-54780046055b\',
-      \'nid\' => \'22\',
-      \'type\' => \'resource\',
-      \'language\' => \'und\',
-      \'created\' => \'1436106274\',
-      \'changed\' => \'1436208022\',
-      \'tnid\' => \'0\',
-      \'translate\' => \'0\',
-      \'uuid\' => \'ec44bb86-999c-45f8-9a4c-c73e7b8fc972\',
-      \'revision_timestamp\' => \'1436208022\',
-      \'revision_uid\' => \'1\',
-      \'body\' => array(
-        \'und\' => array(
-          array(
-            \'value\' => \'This is the API query that [Yuck.io](yuckio.kfgisit.com) uses to determine food recalls. The query is additionally limited by state on Yuck.io as to not go over the no-key-required API query limits of the openFDA API. \',
-            \'summary\' => \'\',
-            \'format\' => \'html\',
-            \'safe_value\' => \'<p>This is the API query that <a href="yuckio.kfgisit.com">Yuck.io</a> uses to determine food recalls. The query is additionally limited by state on Yuck.io as to not go over the no-key-required API query limits of the openFDA API.</p>\',
-            \'safe_summary\' => \'\',
-          ),
-        ),
-      ),
-      \'field_dataset_ref\' => array(
-        \'und\' => array(
-          array(
-            \'target_id\' => \'21\',
-          ),
-        ),
-      ),
-      \'field_format\' => array(
-        \'und\' => array(
-          array(
-            \'tid\' => \'10\',
-          ),
-        ),
-      ),
-      \'field_link_api\' => array(
-        \'und\' => array(
-          array(
-            \'url\' => \'https://api.fda.gov/food/enforcement.json?&limit=100&skip=0\',
-            \'title\' => NULL,
-            \'attributes\' => array(),
-          ),
-        ),
-      ),
-      \'field_link_remote_file\' => array(),
-      \'field_upload\' => array(),
-      \'og_group_ref\' => array(
-        \'und\' => array(
-          array(
-            \'target_id\' => \'2\',
-          ),
-        ),
-      ),
-      \'rdf_mapping\' => array(
-        \'rdftype\' => array(
-          \'sioc:Item\',
-          \'foaf:Document\',
-        ),
-        \'title\' => array(
-          \'predicates\' => array(
-            \'dc:title\',
-          ),
-        ),
-        \'created\' => array(
-          \'predicates\' => array(
-            \'dc:date\',
-            \'dc:created\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'changed\' => array(
-          \'predicates\' => array(
-            \'dc:modified\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-        \'body\' => array(
-          \'predicates\' => array(
-            \'content:encoded\',
-          ),
-        ),
-        \'uid\' => array(
-          \'predicates\' => array(
-            \'sioc:has_creator\',
-          ),
-          \'type\' => \'rel\',
-        ),
-        \'name\' => array(
-          \'predicates\' => array(
-            \'foaf:name\',
-          ),
-        ),
-        \'comment_count\' => array(
-          \'predicates\' => array(
-            \'sioc:num_replies\',
-          ),
-          \'datatype\' => \'xsd:integer\',
-        ),
-        \'last_activity\' => array(
-          \'predicates\' => array(
-            \'sioc:last_activity_date\',
-          ),
-          \'datatype\' => \'xsd:dateTime\',
-          \'callback\' => \'date_iso8601\',
-        ),
-      ),
-      \'name\' => \'admin\',
-      \'picture\' => \'0\',
-      \'data\' => \'b:0;\',
-      \'path\' => array(
-        \'pid\' => \'40\',
-        \'source\' => \'node/22\',
-        \'alias\' => \'dataset/openfda-yuckio-datasets/resource/ec44bb86-999c-45f8-9a4c-c73e7b8fc972\',
         \'language\' => \'und\',
       ),
       \'menu\' => NULL,
