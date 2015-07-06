@@ -35,5 +35,4 @@ script:
 notifications:
   slack:
     rooms:
-      - nucivic:t3p2KxXdzymmwxitWPvfAsnK#monitor-devops
-      - nucivic:t3p2KxXdzymmwxitWPvfAsnK#monitor-dkan
+      - kfgisit:jwWAL4aq5zzG5ZF0Eqs7Tn9N#general
