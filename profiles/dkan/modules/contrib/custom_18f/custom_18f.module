@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the custom_18f feature.
+ */
+
+include_once 'custom_18f.features.inc';
