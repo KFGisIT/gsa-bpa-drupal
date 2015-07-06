@@ -3,11 +3,12 @@ This is a version of DKAN that has already been "made" with drush make. It inclu
 
 To install, follow the same directions as Drupal core: https://www.drupal.org/documentation/install
 
-See the main DKAN repository for further instructions, support, and community: http://github.com/nucivic/dkan
+See the main DKAN repository for further instructions, support, and community: http://github.com/kfgisit/gsa-bpa-drupal
 
 # DKAN on Pantheon
 
 This is a fork based on [Pantheon DROPs](https://github.com/pantheon-systems/drops-7)
+and the "stock" DKAN installation, but with mods to support KFG customers.
 
 ## How to update Drupal Drop from Pantheon Git Repository
 
