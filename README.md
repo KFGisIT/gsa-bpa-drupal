@@ -1,4 +1,6 @@
 # Fully Made Version of DKAN
+[![Build Status](https://travis-ci.org/KFGisIT/gsa-bpa-drupal.svg?branch=master)](https://travis-ci.org/KFGisIT/gsa-bpa-drupal)
+
 This is a version of DKAN that has already been "made" with drush make. It includes Drupal core as well as the DKAN installation profile which can be found in "profiles/dkan".
 
 To install, follow the same directions as Drupal core: https://www.drupal.org/documentation/install
