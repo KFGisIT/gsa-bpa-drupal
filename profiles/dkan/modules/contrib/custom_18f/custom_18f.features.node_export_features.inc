@@ -1105,6 +1105,136 @@ function custom_18f_node_export_features_default() {
       \'node_export_drupal_version\' => \'7\',
     ),
   (object) array(
+      \'vid\' => \'79\',
+      \'uid\' => \'1\',
+      \'title\' => \'openFDA: Recalled Food Items\',
+      \'log\' => \'\',
+      \'status\' => \'1\',
+      \'comment\' => \'0\',
+      \'promote\' => \'0\',
+      \'sticky\' => \'0\',
+      \'vuuid\' => \'e40a68d9-4b5d-4a66-afba-54780046055b\',
+      \'nid\' => \'22\',
+      \'type\' => \'resource\',
+      \'language\' => \'und\',
+      \'created\' => \'1436106274\',
+      \'changed\' => \'1436208022\',
+      \'tnid\' => \'0\',
+      \'translate\' => \'0\',
+      \'uuid\' => \'ec44bb86-999c-45f8-9a4c-c73e7b8fc972\',
+      \'revision_timestamp\' => \'1436208022\',
+      \'revision_uid\' => \'1\',
+      \'body\' => array(
+        \'und\' => array(
+          array(
+            \'value\' => \'This is the API query that [Yuck.io](yuckio.kfgisit.com) uses to determine food recalls. The query is additionally limited by state on Yuck.io as to not go over the no-key-required API query limits of the openFDA API. \',
+            \'summary\' => \'\',
+            \'format\' => \'html\',
+            \'safe_value\' => \'<p>This is the API query that <a href="yuckio.kfgisit.com">Yuck.io</a> uses to determine food recalls. The query is additionally limited by state on Yuck.io as to not go over the no-key-required API query limits of the openFDA API.</p>\',
+            \'safe_summary\' => \'\',
+          ),
+        ),
+      ),
+      \'field_dataset_ref\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'21\',
+          ),
+        ),
+      ),
+      \'field_format\' => array(
+        \'und\' => array(
+          array(
+            \'tid\' => \'10\',
+          ),
+        ),
+      ),
+      \'field_link_api\' => array(
+        \'und\' => array(
+          array(
+            \'url\' => \'https://api.fda.gov/food/enforcement.json?&limit=100&skip=0\',
+            \'title\' => NULL,
+            \'attributes\' => array(),
+          ),
+        ),
+      ),
+      \'field_link_remote_file\' => array(),
+      \'field_upload\' => array(),
+      \'og_group_ref\' => array(
+        \'und\' => array(
+          array(
+            \'target_id\' => \'2\',
+          ),
+        ),
+      ),
+      \'rdf_mapping\' => array(
+        \'rdftype\' => array(
+          \'sioc:Item\',
+          \'foaf:Document\',
+        ),
+        \'title\' => array(
+          \'predicates\' => array(
+            \'dc:title\',
+          ),
+        ),
+        \'created\' => array(
+          \'predicates\' => array(
+            \'dc:date\',
+            \'dc:created\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'changed\' => array(
+          \'predicates\' => array(
+            \'dc:modified\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+        \'body\' => array(
+          \'predicates\' => array(
+            \'content:encoded\',
+          ),
+        ),
+        \'uid\' => array(
+          \'predicates\' => array(
+            \'sioc:has_creator\',
+          ),
+          \'type\' => \'rel\',
+        ),
+        \'name\' => array(
+          \'predicates\' => array(
+            \'foaf:name\',
+          ),
+        ),
+        \'comment_count\' => array(
+          \'predicates\' => array(
+            \'sioc:num_replies\',
+          ),
+          \'datatype\' => \'xsd:integer\',
+        ),
+        \'last_activity\' => array(
+          \'predicates\' => array(
+            \'sioc:last_activity_date\',
+          ),
+          \'datatype\' => \'xsd:dateTime\',
+          \'callback\' => \'date_iso8601\',
+        ),
+      ),
+      \'name\' => \'admin\',
+      \'picture\' => \'0\',
+      \'data\' => \'b:0;\',
+      \'path\' => array(
+        \'pid\' => \'40\',
+        \'source\' => \'node/22\',
+        \'alias\' => \'dataset/openfda-yuckio-datasets/resource/ec44bb86-999c-45f8-9a4c-c73e7b8fc972\',
+        \'language\' => \'und\',
+      ),
+      \'menu\' => NULL,
+      \'node_export_drupal_version\' => \'7\',
+    ),
+  (object) array(
       \'vid\' => \'41\',
       \'uid\' => \'1\',
       \'title\' => \'openFDA: Interactive Adverse Drug Reactions\',
