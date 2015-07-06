@@ -3552,6 +3552,18 @@ function node_access_write_grants($node, $grants, $realm = NULL, $delete = TRUE)
       if ($realm && $realm != $grant['realm']) {
         continue;
       }
+      // node import will blindly add grants to nodes that already exist in {node_access} 
+      // temporary patch until core is updated -- issue has resurfaced in 7.36 -- 
+      // https://drupal.org/node/1146244
+      global $already_granted;
+      $fixkey = $node->nid . "-" . $grant['gid'] . "-" . $grant['realm'];
+      if(in_array($fixkey, $already_granted)) {
+      // the grant was already inserted
+          continue;
+      }
+      else {
+        $already_granted[] = $fixkey;
+      }
       // Only write grants; denies are implicit.
       if ($grant['grant_view'] || $grant['grant_update'] || $grant['grant_delete']) {
         $grant['nid'] = $node->nid;
