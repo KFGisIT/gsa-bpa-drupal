@@ -1,0 +1,57 @@
+<div ng-if="wait" class="waitMask"></div>
+
+
+
+
+<div class="container">
+	<div class="page-top">
+	<h3>Timeline: <span class="page-count">{{data.totalCount | number}}</span> Adverse Drug Reactions</h3>
+		<div class="lines-container">
+			<chart-lines data="data.byField.date" filter="dataFilter.date" filterChanged="filterChanged"></chart-lines>
+		</div>
+		<div class="page-title"><span class="page-count-label"></span>
+		</div><br/><p style="margin: 5px 25px;">Click and drag on this timeline to select a sub region of time; the total number of incidents represented in that time period will be updated, and the graphs below will be updated to only include data from this time period.</p>
+		
+	</div>
+	<div class="bottom-container">
+		<!-- <div>
+			<chart-list filter="dataFilter" count="data.totalCount" wait="wait"></chart-list>	
+		</div> -->
+
+		<div class="barpie-container">
+			<chart-barpie data="data.byField.reaction" filter="dataFilter.reaction" field="reaction" charttitle="What was the Reported Reaction?" chart="bars" filterChanged="filterChanged">
+			</chart-barpie>
+			<p>Click on one or more reported reactions<br/>
+			to see the involved Drug classes, who <br/>
+			reported the reaction and the associated <br/>
+			drug indication. Click "Bar" or "Pie" to toggle <br/>
+			display modes for this data.</p>
+		</div>
+
+		<div class="barpie-container">
+			<chart-barpie data="data.byField.source" filter="dataFilter.source" field="source" charttitle="Who Reported the Reaction?" chart="donut" filterChanged="filterChanged">
+			</chart-barpie>
+			<p>Click on one or mroe types of person making <br/>
+			the adverse reaction report in order to filter <br/>
+			the other graphs by that type of person.</p>
+		</div>
+<hr style="clear: both;" />
+		<div class="barpie-container">
+			<chart-barpie data="data.byField.drugClass" filter="dataFilter.drugClass" field="drugClass" charttitle="What was the class of Drug?" chart="bars" filterChanged="filterChanged">
+			</chart-barpie>
+			<p>Click on one or more classes of drug in order
+		<br/>to filter the reported reaction, reporter of 
+		<br/>the reaction and the associated indicated uses. </p>
+		</div>
+
+		<div class="barpie-container">
+			<chart-barpie data="data.byField.indication" filter="dataFilter.indication" field="indication" charttitle="What was the indication?" chart="donut" filterChanged="filterChanged">
+			</chart-barpie>
+			<p>Click on one or more indications to 
+			<br/>filter the other graphs' dataset. </p>
+		</div>
+	</div>
+	<hr style="clear: both;" />
+	<h2>... <a href="/dataset/openfda-top-adverse-reactions">back to openFDA datasets</a>
+</div>
+
