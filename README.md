@@ -1,6 +1,9 @@
 # Fully Made Version of KFG's Drupal Data Explorer project
 [![Build Status](https://travis-ci.org/KFGisIT/gsa-bpa-drupal.svg?branch=master)](https://travis-ci.org/KFGisIT/gsa-bpa-drupal)
 
+[![KFG Video Walkthrough of GSA BPA Submission](http://img.youtube.com/vi/f4IEkTLi4hg/0.jpg)](http://www.youtube.com/watch?v=f4IEkTLi4hg "KFG Video Walkthrough")
+
+
 This is a Drupal site based on an installation profile of Drupal called DKAN, which is in turn based on Pantheon's Drupal installation profile for cloud-hosted Drupal. Though a drush make file is provided, this site has already been "made" with drush make to expedite the development and testing process. The installation profile has also been extended to include JSON functionality and JSON now has a supported mechanism for being imported into a table-based dataset schema within the Drupal installation. In addition, these imported datasets are exposed to Drupal Views. The d3 javascript library has been added for graphing, and two example datasets/subprojects have also been added: The Yuck.IO dataset -- an interactive dataset exploration website that shows food and drug recalls in your area, and the Top Adverse Drug Reactions, which is a JSON feed from the openFDA API and is backed by a view. In addition to that, a demonstration of an AngularJS front-end for the Top Adverse Drug Reactions is also provided along site the demonstration dataset. 
 
 To install, follow the same directions as Drupal core: https://www.drupal.org/documentation/install
