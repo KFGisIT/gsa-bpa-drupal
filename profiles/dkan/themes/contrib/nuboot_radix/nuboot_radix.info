@@ -58,9 +58,9 @@ settings[toggle_comment_user_verification] = 1
 settings[toggle_favicon] = 1
 settings[toggle_main_menu] = 1
 settings[toggle_secondary_menu] = 1
-settings[logo_path] = 'profiles/dkan/themes/contrib/nuboot_radix/logo.svg'
+settings[logo_path] = 'profiles/dkan/themes/contrib/nuboot_radix/logo.png'
 settings[hero_path] = 'profiles/dkan/themes/contrib/nuboot_radix/assets/images/hero.jpg'
-settings[copyright][value] = 'Powered by Drupal. For Demonstration Purposes Only! Not for Clinical Use!'
+settings[copyright][value] = 'Powered by Drupal, not for production or clinical use!'
 settings[copyright][format] = 'html'
 
 ; Breadcrumbs
@@ -98,6 +98,7 @@ settings[bootstrap_region_well-footer] = ''
 ; ;;;;;;;;;;;;;;;;;;;;;
 ;
 ;scripts[] = 'bootstrap/js/bootstrap.min.js'
+scripts[] = assets/javascripts/radix-script.js
 scripts[] = assets/javascripts/sitewide.js
 scripts[] = assets/javascripts/svgeezy.min.js
 

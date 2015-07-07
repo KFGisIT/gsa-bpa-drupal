@@ -7,12 +7,5 @@ includes[core] = drupal-org-core.make
 
 projects[dkan][type] = profile
 projects[dkan][download][type] = git
-projects[dkan][download][url] = https://github.com/KFGisIT/gsa-bpa-drupal.git
-projects[dkan][download][branch] = master
-
-; D3.js 
-libraries[d3][download][type] = "get"
-libraries[d3][download][url] = "https://github.com/mbostock/d3.git"
-libraries[d3][directory_name] = "d3"
-libraries[d3][destination] = "libraries"
-
+projects[dkan][download][url] = https://github.com/NuCivic/dkan.git
+projects[dkan][download][branch] = 7.x-1.x

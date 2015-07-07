@@ -16,8 +16,7 @@ function nuboot_radix_css_alter(&$css) {
   unset($css[$radix_path . '/assets/stylesheets/radix-style.css']);
   unset($css[$radix_path . '/assets/stylesheets/radix-print.css']);
   // Remove dkan button styles so we can use our own.
-  unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset_btn.css']);
-  unset($css[drupal_get_path('module', 'dkan_dataset') . '/dkan_dataset.css']);
+  unset($css[drupal_get_path('module', 'dkan_dataset') . '/css/dkan_dataset_btn.css']);
 }
 
 /**
@@ -25,7 +24,7 @@ function nuboot_radix_css_alter(&$css) {
  */
 function nuboot_radix_js_alter(&$javascript) {
   $radix_path = drupal_get_path('theme', 'radix');
-  // Remove radix-script.js.
+  // Remove radix-script.js - using patched version in scripts directory.
   // Hash usage in radix-script.js breaks with use of a hash map in URL. https://www.drupal.org/node/2426513.
   unset($javascript[$radix_path . '/assets/javascripts/radix-script.js']);
 }
