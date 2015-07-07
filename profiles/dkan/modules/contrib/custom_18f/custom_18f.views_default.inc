@@ -64,7 +64,24 @@ function custom_18f_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/dataset/openfda-top-adverse-reactions">More about this dataset </a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/dataset/openfda-top-adverse-reactions">More about this dataset </a>
+
+
+<p>This block will help administrators and site reviewers more quickly find the interesting content on this site. Think of it as a featured content area. </p>
+
+<a href="/import/openfda_top_adverse_reactions">Import Adverse Reactions from openFDA (log in as admin)</a>
+Use this query (for example) with the JSON import
+https://api.fda.gov/drug/event.json?search=(receivedate:([20040101+TO+20150101]))&count=patient.reaction.reactionmeddrapt.exact
+
+Learn more about the user interface for configuring this and other data imports:
+<a href="/admin/structure/feeds/openfda_top_adverse_reactions">Configure JSON Feed parameters (schema mapping, other parameters).
+
+Once the information is imported, a simple (non-programmer) <a href="/static/openfda-top-10-adverse-reactions">Drupal View</a> of the data can be previewed. A more <a href="/openfda-top-adverse-drug-reactions-2004-01-01-2015-07-01#/">advanced version</a> of similar data, based on AngularJS instead of Drupal Views, is also available. 
+
+<a href="/dataset/openfda-yuckio-datasets">Another dataset</a> for Yuck.io, is a demonstration of the that is used for the <a href="Yuckio.kfgisit.com">Yuckio.kfgisit.com</a> website. 
+
+
+';
   $handler->display->display_options['footer']['area']['format'] = 'html';
   /* Field: openfda_top_adverse_reactions: Total */
   $handler->display->display_options['fields']['total']['id'] = 'total';
@@ -95,6 +112,42 @@ function custom_18f_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'static/openfda-top-10-adverse-reactions';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'd3_style';
+  $handler->display->display_options['style_options']['library'] = 'd3.columnchart';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'rows' => array(
+      'x_label' => array(
+        'field' => 'reaction',
+        'aggregation' => '_none',
+      ),
+      'value0' => array(
+        'field' => 'total',
+        'aggregation' => '_none',
+      ),
+      'value1' => array(
+        'field' => '__none',
+        'aggregation' => '_none',
+      ),
+    ),
+    'legend' => array(
+      0 => array(
+        'field' => 'reaction',
+        'aggregation' => '_none',
+      ),
+      1 => array(
+        'field' => '__none',
+        'aggregation' => '_none',
+      ),
+    ),
+  );
+  $handler->display->display_options['style_options']['show_table'] = 0;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['openfda_top_10_adverse_reactions'] = $view;
 
   return $export;

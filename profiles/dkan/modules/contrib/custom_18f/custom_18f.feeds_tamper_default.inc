@@ -22,5 +22,19 @@ function custom_18f_feeds_tamper_default() {
   $feeds_tamper->description = 'String to Unix timestamp';
   $export['jsontest-time-strtotime'] = $feeds_tamper;
 
+  $feeds_tamper = new stdClass();
+  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
+  $feeds_tamper->api_version = 2;
+  $feeds_tamper->id = 'jsontest-time-timetodate';
+  $feeds_tamper->importer = 'jsontest';
+  $feeds_tamper->source = 'time';
+  $feeds_tamper->plugin_id = 'timetodate';
+  $feeds_tamper->settings = array(
+    'date_format' => 'Y-m',
+  );
+  $feeds_tamper->weight = 1;
+  $feeds_tamper->description = 'Unix timestamp to Date';
+  $export['jsontest-time-timetodate'] = $feeds_tamper;
+
   return $export;
 }

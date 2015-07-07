@@ -87,12 +87,12 @@ function custom_18f_node_export_features_default() {
               \'value\' => DateObject::__set_state(array(
                  \'granularity\' => 
                 array (
-                  0 => \'year\',
-                  1 => \'month\',
-                  2 => \'day\',
-                  3 => \'hour\',
-                  4 => \'minute\',
-                  5 => \'second\',
+                  0 => \'hour\',
+                  1 => \'minute\',
+                  2 => \'second\',
+                  3 => \'month\',
+                  4 => \'day\',
+                  5 => \'year\',
                   6 => \'timezone\',
                 ),
                  \'errors\' => 
@@ -102,7 +102,7 @@ function custom_18f_node_export_features_default() {
                  \'serializedTimezone\' => \'UTC\',
                  \'timeOnly\' => false,
                  \'dateOnly\' => false,
-                 \'originalTime\' => \'2004-01-01T05:00:00+00:00\',
+                 \'originalTime\' => \'2004-01-01 05:00:00\',
                  \'date\' => \'2004-01-01 05:00:00.000000\',
                  \'timezone_type\' => 3,
                  \'timezone\' => \'UTC\',
@@ -110,12 +110,12 @@ function custom_18f_node_export_features_default() {
               \'value2\' => DateObject::__set_state(array(
                  \'granularity\' => 
                 array (
-                  0 => \'year\',
-                  1 => \'month\',
-                  2 => \'day\',
-                  3 => \'hour\',
-                  4 => \'minute\',
-                  5 => \'second\',
+                  0 => \'hour\',
+                  1 => \'minute\',
+                  2 => \'second\',
+                  3 => \'month\',
+                  4 => \'day\',
+                  5 => \'year\',
                   6 => \'timezone\',
                 ),
                  \'errors\' => 
@@ -125,7 +125,7 @@ function custom_18f_node_export_features_default() {
                  \'serializedTimezone\' => \'UTC\',
                  \'timeOnly\' => false,
                  \'dateOnly\' => false,
-                 \'originalTime\' => \'2015-07-01T04:00:00+00:00\',
+                 \'originalTime\' => \'2015-07-01 04:00:00\',
                  \'date\' => \'2015-07-01 04:00:00.000000\',
                  \'timezone_type\' => 3,
                  \'timezone\' => \'UTC\',
